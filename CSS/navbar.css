@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+    box-sizing:border-box;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body {
+    font-size:1.6rem;
+    background-color: darkslategrey;
+}
+
+.header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav {
+    display:flex;
+    padding:0 2rem;
+    background-color:black;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+}
+
+.logo img {
+    height:8.5rem;
+}
+
+.menu {
+    display:flex;
+    list-style-type: none;
+    gap:2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color:white;
+    gap:4rem;
+    transition:color 1s;
+    font-size:2rem;
+}
+
+.menu li a:hover{
+    color:orange;
+}
+
+.tel a {
+    display:flex;
+    gap:4rem;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-size:2rem;
+
+}
+
+.fa-phone {
+    color:green;
+    font-size:2rem;
+}
+
+@media (max-width:768px){           /* tutaj potem wkleić hamburgera */
+
+    .nav{
+    flex-direction:column;
+    }
+    
+    .menu{
+    flex-direction:column;
+    align-items:center;
+    }
+    
+    .hero-text-one,
+    .hero-text-two,
+    .hero-text-three,
+    .hero-text-four,
+    .hero-text-five 
+    {
+    left:5%;
+    font-size:1.8rem;
+    }}
