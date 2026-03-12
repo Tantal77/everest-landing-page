@@ -6,6 +6,7 @@
 
 html {
     font-size:62.5%;
+    scroll-bahavior:smooth;
 }
 
 body {
@@ -129,3 +130,4 @@ body {
         
     
        
+
