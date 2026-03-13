@@ -372,7 +372,7 @@ figure:hover {
 }
 
 .review:hover {
-    transform:translateY(-5px);
+   transform:translateY(-5px);
 }
 
 .review span {
@@ -532,6 +532,91 @@ figure:hover {
         text-align: center;
     }
 }
+/********************************************************OFFER TAB********************************/
+.complex-offer h1 {
+    color:white;
+    font-family: Verdana;
+    padding:2rem 2rem;
+    text-align: center;
+}
 
+.offer-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:6rem;
+    padding:8rem 2rem;
+    margin-left:3rem;
+    margin-right:3rem;
+}
 
+.tab-offer {
+    position:relative;
+    border-radius:30px;
+    overflow: hidden;
+    transition:transform 1s ease;
+    cursor:pointer;
+}
 
+.tab-offer::after {
+    position:absolute;
+    content:"";
+    inset:0;
+    background:rgba(0,0,0,0.7);
+    max-height:0;
+    transition:1s ease;
+    pointer-events: none;
+}
+
+.tab-offer:hover::after {
+    max-height:100%;
+}
+
+.tab-offer:hover {
+    transform:translateY(-5px);
+}
+
+.tab-offer a {
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.tab-offer img {
+    aspect-ratio:4/3;
+    object-fit:cover;
+    width:100%;
+    height:auto;
+}
+
+.tab-offer-description {
+    position:absolute;
+    text-align: center;
+    color:white;
+    bottom:35%;
+    left:0%;
+    transform:rotate(35deg);
+    z-index:1;
+    font-weight:600;
+    font-size:7cqw;
+    opacity:0;
+    transition: 1s ease;
+}
+
+.tab-offer:hover .tab-offer-description{
+    opacity:1;
+}
+
+@media(max-width:768px) {
+    .tab-offer-description {
+        font-size:13cqw;
+        bottom:40%;
+    }
+}
+
+@media(max-width:768px) {
+    .offer-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
