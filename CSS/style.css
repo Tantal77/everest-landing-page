@@ -620,3 +620,113 @@ figure:hover {
         justify-content: center;
     }
 }
+
+/**********************************REALIZATION TAB*******************************************/
+
+/**********************************CONTACT TAB************************************************/
+.contact-info h1 {
+    text-align: center;
+    color:white;
+    margin:4rem 0;
+}
+
+.tab-contact {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0 2rem;
+    gap:3rem;
+    margin-bottom:2rem;
+}
+
+.contact-description {
+    border:1px solid darkslategray;
+    padding:2rem 4rem;
+    background:rgba(255,255,255,0.03);
+    border-radius:10px;
+    color:white;
+    font-size:2rem;
+    align-items: center;
+    justify-self: center;
+}
+
+.contact-description a {
+    text-decoration: none;
+    color:white;
+    margin-top:1rem;
+}
+
+.fa-home {
+    margin-right:0.5rem;
+}
+
+.form-contact {
+    background:rgba(255,255,255,0.03);
+    border-radius:10px;
+    padding:2rem 4rem;
+}
+
+.form-contact h2 {
+    color:white;
+}
+
+.form-contact input, textarea {
+    width:70%;
+    border:2px solid rgba(255,255,255,0.2); 
+    border-radius:10px;
+    background-color: rgba(255,255,255,0.2);
+    padding:2rem 4rem;
+    margin-bottom:1rem;
+    color: white;
+    outline:none;
+}
+
+.form-contact p {
+    color:white;
+    width:70%;
+    font-size:1.3rem;
+    text-align: justify;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.2);
+}
+
+input:focus {
+    border:1px solid orange;
+}
+
+textarea::placeholder {
+    font-size:1.3rem;
+    color: rgba(255,255,255,0.2);
+}
+
+textarea:focus {
+    border:1px solid orange;
+}
+
+button {
+    width:30%;
+    padding:1.5rem;
+    border-radius:10px; 
+    border:2px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);
+    color:white;
+    font-size:1.5rem; 
+}
+
+@media (max-width:768px) {
+    .tab-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .form-contact input, textarea {
+        width:100%;
+    }
+    button {
+        width:50%;
+    }
+
+    .form-contact p {
+        width:100%;
+    }
+}
