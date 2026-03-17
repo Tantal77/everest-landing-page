@@ -622,7 +622,116 @@ figure:hover {
 }
 
 /**********************************REALIZATION TAB*******************************************/
+.realization-info h1, .realization-title {
+    color:white;
+    text-align: center;
+    padding:1.5rem;
+}
 
+.realization-title {
+    margin-bottom:7rem;
+}
+
+.realization-choose {
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    justify-content: center;
+}
+
+.realization-choose a {
+    text-decoration: none;
+    color:white;
+    border: rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.2);
+    padding:2rem;
+    font-size:2rem;
+    border-radius: 10px;
+    transition:color 0.3s ease;
+}
+
+.realization-choose a:hover  {
+    background-color:black;
+    border:rgba(0,0,0,0);
+    color:orange;
+}
+
+.best-realization {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:4rem;
+    padding:3rem;
+}
+
+.best-realization img {
+    align-self:center;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width:100%;
+    height:auto;
+    border-radius:10px;
+}
+
+.best-realization-description {
+    font-size:2rem;
+    color:white;
+    text-align: justify;
+    padding-top:1rem;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    border-radius:10px;
+}
+
+.best-realization-images {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+    padding:1rem;
+}
+
+.best-realization-images img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width:100%;
+    height:auto;
+}
+
+.realization-images {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+    margin-top:7rem;
+    padding: 2rem;;
+}
+
+.realization-images img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width:100%;
+    height:auto;
+}
+
+@media (max-width:768px) {
+    .best-realization {
+        grid-template-columns: 1fr;
+    }
+
+    .best-realization-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:1024px) {
+    .realization-images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:768px) {
+    .realization-images {
+        grid-template-columns: 1fr;
+    }
+}
 /**********************************CONTACT TAB************************************************/
 .contact-info h1 {
     text-align: center;
@@ -636,6 +745,7 @@ figure:hover {
     padding:0 2rem;
     gap:3rem;
     margin-bottom:2rem;
+    height:auto;
 }
 
 .contact-description {
@@ -647,6 +757,7 @@ figure:hover {
     font-size:2rem;
     align-items: center;
     justify-self: center;
+    align-self: start;
 }
 
 .contact-description a {
@@ -730,3 +841,4 @@ button {
         width:100%;
     }
 }
+
