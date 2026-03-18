@@ -711,6 +711,18 @@ figure:hover {
     height:auto;
 }
 
+.start-scroll {
+    position:sticky;
+    left:5px;
+    bottom:20px;
+    color:black;
+    text-decoration: none;
+    z-index: 999;
+    border:1px white;
+    background-color: white;
+    font-size:5rem;
+}
+
 @media (max-width:768px) {
     .best-realization {
         grid-template-columns: 1fr;
@@ -841,4 +853,29 @@ button {
         width:100%;
     }
 }
+/***********************************************COMPLEX OFFER SUBPAGES**********************/
+.complex-offer-description h1 {
+    text-align: center;
+}
 
+.complex-offer-description {
+    font-size:2rem;
+    padding:5rem 10rem;
+    color:white;
+    text-align: justify;
+}
+
+.complex-offer-description p {
+    margin-bottom:2rem;
+}
+
+.complex-offer-description .fa-phone {
+    margin-left:1rem;
+    font-size:2.5rem;
+}
+
+@media (max-width:768px) {
+    .complex-offer-description {
+        padding:3rem 2rem;
+    }
+}
