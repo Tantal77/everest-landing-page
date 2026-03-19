@@ -134,13 +134,21 @@
     }
 }
 
+@media(max-width:340px) {
+    .hiperlinks {
+        gap:1.5rem;
+        left:0%;
+        font-size:2.2rem;
+    }
+}
+
 .hiperlinks a {
     color:white;
     text-decoration: none;
     padding:1rem;
     opacity:0;
     border:2px solid white;
-    transition: color 1s;
+    transition: color 0.5s;
     animation:heroImage 1.2s ease 1.5s forwards;
 }
 
@@ -168,10 +176,23 @@
 
 .about-logo {
     position:absolute;
-    left:-6%;
-    top:0;
-    width:16rem;
+    left:0%;
+    top:-7%;
+    width:14cqw;
     z-index:0;
+}
+
+@media (max-width:1100px) {
+    .about-logo {
+        top:0%;
+    }
+}
+
+@media (max-width:825px) {
+    .about-logo {
+        width:20cqw;
+        left:-5%;
+    }
 }
 
 .about-description::after {
@@ -189,18 +210,17 @@
     z-index:999;
 }
 
-@media(max-width:400px) {
-    .about-description h2 {
-        margin-right:auto;
-        margin-left:30%;
-    }
-}
-
 .about-description p {
     position:relative;
     text-align: justify;
     padding:0.5rem 2rem 2rem 2rem;
     z-index:999;
+    font-size:2rem;
+}
+
+.about-description a {
+    text-decoration: none;
+    color:orange;
 }
 
 .number-box {
@@ -208,6 +228,7 @@
     border-radius:10px;
     text-align: center;
     padding:2rem;
+    font-size:2rem;
 }
 
 .number-box span {
@@ -280,6 +301,11 @@
 .what a, .where a {
     text-decoration: none;
     color:orange;
+}
+
+.where div {
+    text-align: center;
+    margin-top:1rem;
 }
 
 @media(max-width:768px) {
@@ -490,6 +516,27 @@ figure:hover {
     font-size:1.6rem;
 }
 
+.phone-banner {
+    display:none;
+}
+
+@media (max-width:768px) {
+.phone-banner {
+    display:inline;
+    position:fixed;
+    top:90%;
+    left:5%;
+    z-index:9999;
+    padding:1rem 0.75rem 0.75rem 1rem;
+    border:2px solid white;
+    border-radius:30px;
+    transition:color 0.5s;
+}
+.phone-banner:hover {
+    background-color: white;
+}
+}
+
 .footer {
     padding:4rem 2rem;
     display: grid;
@@ -689,6 +736,10 @@ figure:hover {
     padding:1rem;
 }
 
+.best-realization-images .review-photo img {
+    object-fit: contain;
+}
+
 .best-realization-images img {
     aspect-ratio: 4/3;
     object-fit: cover;
@@ -718,9 +769,17 @@ figure:hover {
     color:black;
     text-decoration: none;
     z-index: 999;
-    border:1px white;
+    color:white;
+    border:1px solid white;
+    border-radius:20px;
+    padding:0.75rem;
+    font-size:2rem;
+    transition:color 0.5s;
+}
+
+.start-scroll:hover {
+    color:black;
     background-color: white;
-    font-size:5rem;
 }
 
 @media (max-width:768px) {
@@ -872,6 +931,11 @@ button {
 .complex-offer-description .fa-phone {
     margin-left:1rem;
     font-size:2.5rem;
+}
+
+.complex-offer-description a {
+    color:orange;
+    text-decoration: none;
 }
 
 @media (max-width:768px) {
