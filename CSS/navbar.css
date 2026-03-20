@@ -7,12 +7,12 @@
 html {
     font-size:62.5%;
     scroll-bahavior:smooth;
+    overflow-anchor:none;
 }
 
 body {
     font-size:1.6rem;
-    background-color: darkslategrey;
-    overflow-anchor:none;
+    background-color: darkslategrey;   
 }
 
 .header {
