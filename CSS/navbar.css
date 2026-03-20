@@ -2,11 +2,11 @@
 *::after,
 *::before {
     box-sizing:border-box;
+    scroll-bahavior:smooth;
 }
 
 html {
     font-size:62.5%;
-    scroll-bahavior:smooth;
 }
 
 body {
