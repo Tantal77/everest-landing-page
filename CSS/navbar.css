@@ -2,16 +2,17 @@
 *::after,
 *::before {
     box-sizing:border-box;
-    scroll-bahavior:smooth;
 }
 
 html {
     font-size:62.5%;
+    scroll-bahavior:smooth;
 }
 
 body {
     font-size:1.6rem;
     background-color: darkslategrey;
+    overflow-anchor:none;
 }
 
 .header {
